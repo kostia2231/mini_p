@@ -22,7 +22,7 @@ mongoose_1.default
     console.error("error whiel connecting db: ", e.message);
 });
 app.get("/", (_req, res) => {
-    res.send("hello");
+    res.send("this is hello from server :]");
 });
 app.listen(PORT, () => {
     console.log(`server is running on http//:localhost:${PORT}`);
