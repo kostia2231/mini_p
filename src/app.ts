@@ -1,8 +1,10 @@
 import express from "express";
 import mongoose from "mongoose";
 import router from "./routes/auth";
+import "dotenv/config";
 
 const MONGO_URI = process.env.MONGO_URI || "nothing";
+// console.log("this is uri: ", MONGO_URI);
 const PORT = process.env.PORT || 7331;
 
 const app = express();
