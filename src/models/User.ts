@@ -45,7 +45,7 @@ userSchema.pre<IUser>(
       user.password = await bcrypt.hash(user.password, salt);
       next();
     } catch (err) {
-      console.error("Error while hashing password:", (err as Error).message);
+      console.error("error while hashing password:", (err as Error).message);
       next(err as Error);
     }
   },

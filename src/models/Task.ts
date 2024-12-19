@@ -1,7 +1,5 @@
 import mongoose, { model, Schema, Document } from "mongoose";
-
-type Status = "todo" | "in-progress" | "done";
-type Priority = "low" | "medium" | "high";
+import { Priority, Status } from "../types/task";
 
 interface ITask extends Document {
   title: string;
